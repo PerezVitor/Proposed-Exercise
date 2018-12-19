@@ -39,6 +39,10 @@ namespace Proposed_Exercise
 
                 order.AddItem(item);
             }
+
+            Console.WriteLine("\nOrder SUMMARY: ");
+            Console.WriteLine(order);
+            Console.ReadLine();
         }
     }
 }

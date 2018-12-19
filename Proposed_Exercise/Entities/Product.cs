@@ -21,7 +21,7 @@ namespace Proposed_Exercise.Entities
         {
             return Name
                 + ", "
-                + Price;
+                + Price.ToString("c");
         }
     }
 }

@@ -20,10 +20,10 @@ namespace Proposed_Exercise.Entities
 
         public override string ToString()
         {
-            return "Client "
+            return "Client: "
                 + Name
                 + " "
-                + BirthDate
+                + BirthDate.ToString("dd/MM/yyyy")
                 + " - "
                 + Email;
         }

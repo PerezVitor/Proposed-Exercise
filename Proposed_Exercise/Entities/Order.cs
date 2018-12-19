@@ -51,7 +51,7 @@ namespace Proposed_Exercise.Entities
             sb.AppendLine("Order Items");
             foreach(OrderItem item in Items)
             {
-                sb.AppendLine(Items.ToString());
+                sb.AppendLine(item.ToString());
             }
             sb.Append("Total price: " + Total().ToString("c"));
 
