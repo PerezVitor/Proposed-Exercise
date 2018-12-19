@@ -1,9 +1,7 @@
 ﻿using Proposed_Exercise.Entities.Enum;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Proposed_Exercise.Entities
 {
@@ -22,6 +20,16 @@ namespace Proposed_Exercise.Entities
             Moment = moment;
             Status = status;
             Client = client;
+        }
+
+        public void AddItem(OrderItem item)
+        {
+            Items.Add(item);
+        }
+
+        public void RemoveItem(OrderItem item)
+        {
+            Items.Remove(item);
         }
 
         public double Total()
